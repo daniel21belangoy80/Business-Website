@@ -1,0 +1,148 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc, #81d4fa);
+    color: #033649;
+    padding: 50px 20px;
+}
+
+/* Main Glass Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #01579b;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #0277bd;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(2, 119, 189, 0.3);
+    padding-bottom: 6px;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* Labels (like Phone, Email, etc.) */
+.label {
+    margin-top: 18px;
+    font-weight: 600;
+    color: #01579b;
+}
+
+/* Strong text */
+strong {
+    color: #01579b;
+}
+
+/* Contact Form */
+.contact-form{
+    margin-top:25px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+/* Inputs and textarea */
+.contact-form input,
+.contact-form textarea{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #b3e5fc;
+    font-size:14px;
+    outline:none;
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#29b6f6;
+    box-shadow:0 0 5px rgba(41,182,246,0.4);
+}
+
+/* Button */
+.contact-form button{
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:20px;
+    background:#29b6f6;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Button hover */
+.contact-form button:hover{
+    background:#0288d1;
+}
+
+/* Flex container for founder section */
+.founder {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-left: 4px solid #29b6f6;
+    border-radius: 10px;
+}
+
+/* Founder image */
+.founder-img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Text next to image */
+.founder-text {
+    flex: 1;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 700px) {
+    .founder {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .founder-img {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+}
+
+.dark-mode{
+    background:#0f172a;
+    color:white;
+}
