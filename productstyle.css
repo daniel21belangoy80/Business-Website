@@ -1,0 +1,96 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body - soft aquatic gradient */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc, #81d4fa);
+    color: #033649;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    color: #01579b;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #0277bd;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+/* Remove default border */
+table, td {
+    border: none;
+}
+
+/* Product Card Effect */
+td {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover - floating effect */
+td:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Images */
+td img {
+    border-radius: 12px;
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Fish Name Text Row */
+tr:nth-child(even) td {
+    font-weight: 600;
+    color: #01579b;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Hover effect */
+.buy-button:hover {
+    background: #0288d1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Clicked effect using checkbox hack */
+.buy-button input[type="checkbox"] {
+    display: none;
+}
+
+.buy-button span {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.buy-button input[type="checkbox"]:checked + span::after {
+    content: " ✓ Added";
+    margin-left: 8px;
+    color: #ffeb3b;
+    font-weight: bold;
+}
